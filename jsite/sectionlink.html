@@ -3,6 +3,90 @@
 <head>
 <meta charset="utf-8"></meta>
 	<title>Section Links</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		p {
+			color: blue;
+			font-size: 20px;
+			width: 200px;
+			text-align: center;
+
+		}
+
+		section h3
+		{
+			background: green
+		}
+		section li a
+		{
+			color: red;
+			font-style: bold
+			font-size: 36px;
+		}
+		h1 {
+			color: purple !important;
+			font-size: 36px;
+			text-align: center;
+
+		}
+		div > h2
+		{
+			color: red;
+			background-color: green
+		
+		}
+		.orng {
+			color: orange;
+			font-size: 20px;
+			text-align: center;
+		}
+		.js {
+			color: brown;
+			font-size: 26px;
+			text-align: justify-all;
+		}
+		section li {
+			list-style: none;
+		}
+		a:link, a:visited {
+			text-decoration: none;
+			background: green;
+			border: 2px solid blue;
+			color: black;
+			display: block;
+			width: 200px;
+			text-align: center;
+			margin-bottom: 2px;
+		}
+		a:hover, a:active
+		{
+			background: red;
+			color: purple;
+			font-size: 20px;
+		}
+		section li:nth-child(2)
+		{
+			font-size: 20px;
+		}
+		#s1 div:nth-child(odd)
+		{
+			background: red;
+			width: 200px;
+		}
+		#s1 div:nth-child(even):hover
+		{
+			background: green;
+			cursor: pointer;
+		}
+			.js
+{
+	font-family: "Times New Roman", Times, serif;
+	color: hsl(120,100%,75%);
+	font-style: italic;
+	font-size: 20px;
+	
+}
+	</style>
 </head>
 <body>
 <h1 id="top"> Links to same page</h1>
@@ -15,8 +99,8 @@
 <section id="section">
 	<h3>Section 1</h3>
 	<p>
-	<img src="IMG-20160401-WA0009.jpeg" width=640 height=450 alt="pic of my baby">
-	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	<img src="IMG-20160401-WA0009.jpeg" style="text-align: center;" width=400 height=200 alt="pic of my baby">
+	<div class="orng">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -30,7 +114,7 @@
 </section>
 <div>
 	<h2><a name="section2">section 2</a></h2>
-	<p><img src="IMG-20160612-WA0002.jpg" width="550" height="450" alt="second image">
+	<p class= "p1"><img src="IMG-20160612-WA0002.jpg" width="550" height="450" alt="second image"><div class="js">
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -71,10 +155,25 @@
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></p>
 	<p>
 		back to top! : <a href="#top">back to top</a>
 	</p>
+	<style type="text/css">
+		p{
+			color: red;
+		}
+	</style>
+	<p>
+		narvin 2016 &copy; copyrigth
+	</p>
 </div>
+<section id="s1">
+	<div>DIV1</div>
+	<div>DIV2</div>
+	<div>DIV3</div>
+	<div>DIV4</div>
+	<div>DIV5</div>
+</section>
 </body>
 </html>
